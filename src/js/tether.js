@@ -317,6 +317,13 @@ class TetherClass extends Evented {
 
     this.updateAttachClasses(this.attachment, targetAttachment);
 
+    var targetBounds = this.cache('target-bounds', () => {
+      return this.getTargetBounds();
+    });
+
+    if (this.options.matchWidth) this.element.style.width = `${targetBounds.width}px`;
+    if (this.options.matchHeight) this.element.style.height = `${targetBounds.height}px`;
+
     const elementPos = this.cache('element-bounds', () => {
       return getBounds(this.element);
     });
