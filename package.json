@@ -1,7 +1,7 @@
 {
-  "name": "tether",
-  "version": "2.0.1",
-  "description": "A client-side library to make absolutely positioned elements attach to elements in the page efficiently.",
+  "name": "@pmort/tether",
+  "version": "2.0.2",
+  "description": "Fork of https://github.com/shipshapecode/tether allowing for matching the element width/height with the target",
   "authors": [
     "Zack Bloom <zackbloom@gmail.com>",
     "Adam Schwartz <adam.flynn.schwartz@gmail.com>"
@@ -29,7 +29,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/HubSpot/tether.git"
+    "url": "https://github.com/patrickmortensen/tether.git"
   },
   "license": "MIT",
   "main": "dist/js/tether.js",
